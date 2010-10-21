@@ -11,6 +11,7 @@ load "models.rb"
 
 File.open("./tmp/msn.txt", "w")
 File.open("./tmp/tux.txt", "w")
+File.open("./tmp/tux.txt", "w")
 
 get "/" do
   redirect "/#{Model.random}"
