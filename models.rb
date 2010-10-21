@@ -5,7 +5,7 @@ class Model
   
   def initialize(name)
     @name = name
-    @path = File.dirname(__FILE__) + "/db/#{name}.txt"
+    @path = File.dirname(__FILE__) + "/tmp/#{name}.txt"
     #if !File.exists?(@path)
     #  File.open(@path, "w") {|f| f.write "0" } rescue "Cannot create file #{name}.txt"
     #end
@@ -32,7 +32,7 @@ class Model
   end
   
   def self.get_all
-    all = Dir.glob(File.dirname(__FILE__) + "/db/*.txt")
+    all = Dir.glob(File.dirname(__FILE__) + "/tmp/*.txt")
     retval = Array.new
     all.each do |m|
       retval.push File.basename(m.gsub('.txt', ''))

@@ -14,10 +14,10 @@ $(function() {
        url: url,
        success: function(msg) {
          $("#clicks span").html(msg);
-       },
+       }/*,
        error: function(msg) {
          alert("— Stop insane clicking!\nTerron Gorefiend");
-       }
+       }*/
      });
      return false;
    });

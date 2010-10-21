@@ -6,7 +6,7 @@ set :public, File.dirname(__FILE__) + '/public'
 set :views, File.dirname(__FILE__) + '/views'
 set :haml, :attr_wrapper => '"'
 
-URL  = "http://localhost:9393/"
+URL = "http://hits.heroku.com/"
 load "models.rb"
 
 get "/" do
