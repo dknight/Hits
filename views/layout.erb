@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title><%= title %></title>
+	<link rel="stylesheet" href="/master.css" type="text/css" media="screen" charset="utf-8" />
+</head>
+
+<body>
+
+<div id="others">
+  <strong>Other stuff to hit:</strong>
+  <% Model.get_all.each do |m| %>
+      <img src="/icons/<%= m %>.png" alt="" />
+      <% if m == name %>
+      <span><%= Model.new(m).human_name %></span>
+      <% else %>
+      <a href="/<%= m %>"><%= Model.new(m).human_name %></a>
+      <% end %>
+      &nbsp;
+  <% end %>
+</div>
+  
+<div id="wrapper">
+
+  <%= yield %>
+  
+  <div id="footer">
+    &copy; 2010 <a href="http://www.dmitri.me/">Dmitri Smirnov</a> | 
+    <a href="/api">API</a> | 
+    <a href="/contest">Contest</a>
+  </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

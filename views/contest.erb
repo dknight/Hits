@@ -1,0 +1,15 @@
+<div id="content">
+<h1>Contest</h1>
+<table id="contest">
+  <% Model.get_all.each do |m| %>
+  <tr>
+    <td class="param"><img src="/icons/<%= m %>.png" alt="" /></td>
+    <td class="value">
+      <div class="line"></div>
+      <span class="hits"><%= Model.new(m).get_count %></span>
+      <div class="clearer"></div>
+    <td>
+  </tr>
+  <% end%>
+</table>
+</div>

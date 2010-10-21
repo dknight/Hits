@@ -1,0 +1,11 @@
+<div id="others">
+  <strong>Other stuff to click:</strong>
+  <% Model.get_all.each do |m| %>
+      <img src="/icons/<%= m %>.png" alt="" />
+      <% if m == name %>
+      <span><%= Model.new(m).human_name %></span>
+      <% else %>
+      <a href="/<%= m %>"><%= Model.new(m).human_name %></a>
+      <% end %>
+  <% end %>
+</div>

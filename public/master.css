@@ -1,0 +1,124 @@
+body {
+  margin:0;
+  padding:0;
+  font-size: 12px;
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+  color:#05c;
+}
+a:active,
+a:hover {
+  color:#c00;
+}
+a:visited {
+  color:#909;
+}
+a img { border:none; }
+a#why {
+  font-size:11px;
+  font-weight:normal;
+  text-decoration:none;
+}
+#fun {
+  position:absolute;
+  top:100px;
+  left:260px;
+  font-size:120%;
+  padding:10px;
+  border:1px solid #ccc;
+  background:#ffc;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  display:none;
+}
+#arrow {
+  position:absolute;
+  left:-14px;
+  width:14px;
+  height:17px;
+  background:transparent url("/arrow.png") no-repeat top left;
+}
+#wrapper {
+  width:400px;
+  margin:0px auto;
+  position:relative;
+  text-align:center;
+  margin-top:50px;
+  /* border:1px solid blue; */
+}
+h1 {
+  font-size:300%;
+}
+#content {
+  text-align:left;
+}
+#content p,
+#content code {
+  font-size:150%;
+  line-height:1.4em;
+}
+#others {
+  margin:20px 0px;
+}
+#tux {
+  position:relative;
+  width:180px;
+  margin:0px auto;
+}
+#tux a {
+  outline:none;
+}
+#tux a img {
+  position:relative;
+  border:none;
+}
+p#clicks {
+  font-size:150%;
+  position:absolute;
+  text-align:center;
+  top:280px;
+  width:inherit !important;
+}
+p#clicks span {
+  font-weight:bold;
+}
+#contest {
+  width:100%;
+}
+#contest td {
+  vertical-align:middle;
+}
+#contest .param {
+  width:16px;
+}
+#contest .value {
+  height:20px;
+}
+#contest .line {
+  width:0px;
+  height:8px;
+  background-color:#ccc;
+  float:left;
+  margin-right:10px;
+  margin-top:3px;
+}
+#contest .hits {
+  color:#666;
+  float:left;
+  display:block;
+}
+#footer {
+  position:fixed;
+  bottom:0px;
+  text-align:center;
+  margin:0 auto;
+  padding:10px 0px;
+  width:inherit;
+}
+.clearer {
+  visibility:hidden;
+  clear:both;
+}

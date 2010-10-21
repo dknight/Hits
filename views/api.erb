@@ -1,0 +1,15 @@
+<div id="content">
+<h1>API</h1>
+
+<p>
+  Hit API is very simple! Just put one of these links anywhere you want.
+</p>
+<code>
+  <% Model.get_all.each do |m| %>
+  <img src="/icons/<%= m %>.png" alt="<%= m %>" />
+  <a href="<%= URL + m %>/hit"><%= URL + m %>/hit</a><br />
+  <% end %>
+</code>
+<p>
+</p>
+</div>
