@@ -32,7 +32,7 @@ class Model
   end
   
   def self.get_all
-    ['tux', 'msn', 'heart']
+    ['tux', 'ruby', 'msn', 'heart']
   end
   
   def self.random

@@ -54,9 +54,17 @@ h1 {
   text-align:left;
 }
 #content p,
-#content code {
-  font-size:150%;
+#content .code {
+  font-size:140%;
   line-height:1.4em;
+}
+#content .code {
+  padding:10px;
+  background-color:#ffc;
+  border-radius:10px;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  font-family:Monaco, Courier, "Courier New", Monospace;
 }
 #others {
   margin:20px 0px;
