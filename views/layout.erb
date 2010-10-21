@@ -4,6 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="author" content="Dmitri Smirnov" />
+	<meta name="description" content="Boredom? Come in and click just for fun!" />
 	<title><%= title %></title>
 	<link rel="stylesheet" href="/master.css" type="text/css" media="screen" charset="utf-8" />
 </head>
@@ -11,7 +13,7 @@
 <body>
 
 <div id="others">
-  <strong>Other stuff to hit:</strong>
+  <strong>Stuff to hit:</strong>
   <% Model.get_all.each do |m| %>
       <img src="/icons/<%= m %>.png" alt="" />
       <% if m == name %>
@@ -30,6 +32,7 @@
   <div id="footer">
     &copy; 2010 <a href="http://www.dmitri.me/">Dmitri Smirnov</a> | 
     <a href="/api">API</a> | 
+    <a href="http://github.com/dknight/Hits">Source</a> | 
     <a href="/contest">Contest</a>
   </div>
 </div>

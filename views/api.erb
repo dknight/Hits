@@ -4,11 +4,14 @@
 <p>
   Hit API is very simple! Just put one of these links anywhere you want.
 </p>
+
 <div class="code">
   <% Model.get_all.each do |m| %>
   <img src="/icons/<%= m %>.png" alt="<%= m %>" />
   <a href="<%= URL + m %>/hit"><%= URL + m %>/hit</a><br />
   <% end %>
-<div>
-</p>
+</div>
+
+<p>Template: <%= URL %>{name}/hit</p>
+
 </div>
