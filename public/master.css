@@ -5,15 +5,13 @@ body {
   text-align:center;
   font-family: Arial, Helvetica, sans-serif;
 }
-a:link {
+a:link,
+a:visited {
   color:#05c;
 }
 a:active,
 a:hover {
   color:#c00;
-}
-a:visited {
-  color:#909;
 }
 a img { border:none; }
 a#why {

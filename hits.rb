@@ -9,9 +9,10 @@ set :haml, :attr_wrapper => '"'
 URL = "http://hits.heroku.com/"
 load "models.rb"
 
-File.open("./tmp/msn.txt", "w")
-File.open("./tmp/tux.txt", "w")
-File.open("./tmp/heart.txt", "w")
+
+Model.get_all.each do |m|
+  File.open("./tmp/#{m}.txt", "w")
+end
 
 get "/" do
   redirect "/#{Model.random}"

@@ -32,14 +32,7 @@ class Model
   end
   
   def self.get_all
-    all = Dir.glob(File.dirname(__FILE__) + "/tmp/*.txt")
-    retval = Array.new
-    all.each do |m|
-      if File.exists?(m)
-        retval.push File.basename(m.gsub('.txt', ''))
-      end
-    end
-    retval
+    ['tux', 'msn', 'heart']
   end
   
   def self.random
