@@ -35,7 +35,9 @@ class Model
     all = Dir.glob(File.dirname(__FILE__) + "/tmp/*.txt")
     retval = Array.new
     all.each do |m|
-      retval.push File.basename(m.gsub('.txt', ''))
+      if File.exists?(m)
+        retval.push File.basename(m.gsub('.txt', ''))
+      end
     end
     retval
   end
