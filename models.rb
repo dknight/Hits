@@ -5,7 +5,7 @@ class Model
   
   def initialize(name)
     @name = name
-    @path = File.dirname(__FILE__) + "/tmp/#{name}.txt"
+    @path = File.dirname(__FILE__) + "/log/#{name}.txt"
     #if !File.exists?(@path)
     #  File.open(@path, "w") {|f| f.write "0" } rescue "Cannot create file #{name}.txt"
     #end

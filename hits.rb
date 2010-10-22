@@ -11,7 +11,7 @@ load "models.rb"
 
 
 Model.get_all.each do |m|
-  File.open("./tmp/#{m}.txt", "w")
+  File.open("./log/#{m}.txt", "w")
 end
 
 get "/" do
