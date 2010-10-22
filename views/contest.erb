@@ -3,12 +3,16 @@
 <table id="contest">
   <% Model.get_all.each do |m| %>
   <tr>
-    <td class="param"><img src="/icons/<%= m %>.png" alt="" /></td>
+    <td class="param">
+      <a href="<%= URL + m %>">
+        <img src="/icons/<%= m %>.png" alt="" />
+      </a>
+    </td>
     <td class="value">
       <div class="line"></div>
       <span class="hits"><%= Model.new(m).get_count %></span>
       <div class="clearer"></div>
-    <td>
+    </td>
   </tr>
   <% end%>
 </table>
